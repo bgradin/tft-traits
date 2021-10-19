@@ -58,6 +58,8 @@ executeOnCombinations(set.champions, TOTAL_SLOTS, x => x.slots || 1, (compositio
   }
 });
 
+compositionCache = compositionCache.sort(numericallyDescending(comp => comp.traits.length));
+
 console.log(`Top ${COMP_LIMIT} comps by traits:`);
 for (let i = 0; i < COMP_LIMIT; i++) {
   const composition = compositionCache[i];
