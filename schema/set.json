@@ -6,6 +6,7 @@
       "properties": {
         "id": { "type": "string" },
         "name": { "type": "string" },
+        "slots": { "type": "integer" },
         "traits": {
           "type": "array",
           "items": {
@@ -32,12 +33,21 @@
       "required": [ "id", "name", "levels" ]
     }
   },
-  "champions": {
-    "type": "array",
-    "items": { "ref": "#/$defs/champion" }
+  "type": "object",
+  "properties": {
+    "champions": {
+      "type": "array",
+      "items": {
+        "type": { "$ref": "#/$defs/champion" }
+      }
+    },
+    "traits": {
+      "type": "array",
+      "items": {
+        "type": { "$ref": "#/$defs/trait" }
+      }
+    }
   },
-  "traits": {
-    "type": "array",
-    "items": { "ref": "#/$defs/trait" }
-  }
+  "additionalProperties": false,
+  "required": [ "champions", "traits" ]
 }
