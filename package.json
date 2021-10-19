@@ -1,0 +1,16 @@
+{
+  "name": "tft-traits",
+  "version": "1.0.0",
+  "main": "traits.ts",
+  "scripts": {
+    "traits": "npx ts-node scripts/traits.ts"
+  },
+  "author": "Brian Gradin",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.11.1",
+    "jsonschema": "^1.4.0",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  }
+}

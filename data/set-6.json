@@ -1,0 +1,620 @@
+{
+  "champions": [
+    {
+      "id": "akali",
+      "name": "Akali",
+      "traits": [
+        "syndicate",
+        "assassin"
+      ]
+    },
+    {
+      "id": "braum",
+      "name": "Braum",
+      "traits": [
+        "syndicate",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "caitlyn",
+      "name": "Caitlyn",
+      "traits": [
+        "enforcer",
+        "sniper"
+      ]
+    },
+    {
+      "id": "blitz",
+      "name": "Blitzcrank",
+      "traits": [
+        "scrap",
+        "protector",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "chamille",
+      "name": "Chamille",
+      "traits": [
+        "clockwork",
+        "challenger"
+      ]
+    },
+    {
+      "id": "cho",
+      "name": "Chogath",
+      "slots": 2,
+      "traits": [
+        "mutant",
+        "colossus",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "darius",
+      "name": "Darius",
+      "traits": [
+        "syndicate",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "zyra",
+      "name": "Zyra",
+      "traits": [
+        "syndicate",
+        "scholar"
+      ]
+    },
+    {
+      "id": "mundo",
+      "name": "Dr. Mundo",
+      "traits": [
+        "chemtech",
+        "mutant",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "ekko",
+      "name": "Ekko",
+      "traits": [
+        "scrap",
+        "assassin"
+      ]
+    },
+    {
+      "id": "ezreal",
+      "name": "Ezreal",
+      "traits": [
+        "scrap",
+        "innovator"
+      ]
+    },
+    {
+      "id": "galio",
+      "name": "Galio",
+      "traits": [
+        "socialite",
+        "colossus",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "fiora",
+      "name": "Fiora",
+      "traits": [
+        "enforcer",
+        "challenger"
+      ]
+    },
+    {
+      "id": "gangplank",
+      "name": "Gangplank",
+      "traits": [
+        "mercenery",
+        "twinshot"
+      ]
+    },
+    {
+      "id": "garen",
+      "name": "Garen",
+      "traits": [
+        "academy",
+        "protector"
+      ]
+    },
+    {
+      "id": "graves",
+      "name": "Graves",
+      "traits": [
+        "academy",
+        "twinshot"
+      ]
+    },
+    {
+      "id": "heimer",
+      "name": "Heimerdinger",
+      "traits": [
+        "yordle",
+        "scholar",
+        "innovator"
+      ]
+    },
+    {
+      "id": "illaoi",
+      "name": "Illaoi",
+      "traits": [
+        "mercenery",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "janna",
+      "name": "Janna",
+      "traits": [
+        "scrap",
+        "enchanter",
+        "scholar"
+      ]
+    },
+    {
+      "id": "jayce",
+      "name": "Jayce",
+      "traits": [
+        "enforcer",
+        "transformer",
+        "innovator"
+      ]
+    },
+    {
+      "id": "jhin",
+      "name": "Jhin",
+      "traits": [
+        "clockwork",
+        "sniper"
+      ]
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "traits": [
+        "sister",
+        "scrap",
+        "twinshot"
+      ]
+    },
+    {
+      "id": "kaisa",
+      "name": "Kaisa",
+      "traits": [
+        "mutant",
+        "challenger"
+      ]
+    },
+    {
+      "id": "kassadin",
+      "name": "Kassadin",
+      "traits": [
+        "mutant",
+        "protector"
+      ]
+    },
+    {
+      "id": "katarina",
+      "name": "Katarina",
+      "traits": [
+        "academy",
+        "assassin"
+      ]
+    },
+    {
+      "id": "kogmaw",
+      "name": "Kogmaw",
+      "traits": [
+        "mutant",
+        "sniper",
+        "twinshot"
+      ]
+    },
+    {
+      "id": "leona",
+      "name": "Leona",
+      "traits": [
+        "academy",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "lissandra",
+      "name": "Lissandra",
+      "traits": [
+        "chemtech",
+        "scholar"
+      ]
+    },
+    {
+      "id": "lux",
+      "name": "Lux",
+      "traits": [
+        "academy",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "malzahar",
+      "name": "Malzahar",
+      "traits": [
+        "mutant",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "mf",
+      "name": "Miss Fortune",
+      "traits": [
+        "mercenery",
+        "sniper"
+      ]
+    },
+    {
+      "id": "oriana",
+      "name": "Oriana",
+      "traits": [
+        "clockwork",
+        "enchanter"
+      ]
+    },
+    {
+      "id": "poppy",
+      "name": "Poppy",
+      "traits": [
+        "yordle",
+        "bodyguard"
+      ]
+    },
+    {
+      "id": "quinn",
+      "name": "Quinn",
+      "traits": [
+        "mercenery",
+        "challenger"
+      ]
+    },
+    {
+      "id": "samira",
+      "name": "Samira",
+      "traits": [
+        "imperial",
+        "challenger"
+      ]
+    },
+    {
+      "id": "shaco",
+      "name": "Shaco",
+      "traits": [
+        "syndicate",
+        "assassin"
+      ]
+    },
+    {
+      "id": "seraphine",
+      "name": "Seraphine",
+      "traits": [
+        "socialite",
+        "innovator"
+      ]
+    },
+    {
+      "id": "singed",
+      "name": "Singed",
+      "traits": [
+        "chemtech",
+        "innovator"
+      ]
+    },
+    {
+      "id": "sion",
+      "name": "Sion",
+      "traits": [
+        "imperial",
+        "protector",
+        "colossus"
+      ]
+    },
+    {
+      "id": "swain",
+      "name": "Swain",
+      "traits": [
+        "imperial",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "tk",
+      "name": "Tahm Kench",
+      "traits": [
+        "mercenery",
+        "glutton",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "talon",
+      "name": "Talon",
+      "traits": [
+        "imperial",
+        "assassin"
+      ]
+    },
+    {
+      "id": "taric",
+      "name": "Taric",
+      "traits": [
+        "socialite",
+        "enchanter"
+      ]
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor",
+      "traits": [
+        "chemtech",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "tristana",
+      "name": "Tristana",
+      "traits": [
+        "yordle",
+        "sniper"
+      ]
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "traits": [
+        "chemtech",
+        "challenger"
+      ]
+    },
+    {
+      "id": "tryndamere",
+      "name": "Tryndamere",
+      "traits": [
+        "syndicate",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "yone",
+      "name": "Yone",
+      "traits": [
+        "academy",
+        "challenger"
+      ]
+    },
+    {
+      "id": "trundle",
+      "name": "Trundle",
+      "traits": [
+        "scrap",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "yuumi",
+      "name": "Yuumi",
+      "traits": [
+        "academy",
+        "cuddly",
+        "scholar"
+      ]
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "traits": [
+        "chemtech",
+        "assassin"
+      ]
+    },
+    {
+      "id": "zac",
+      "name": "Zac",
+      "traits": [
+        "chemtech",
+        "bruiser"
+      ]
+    },
+    {
+      "id": "urgot",
+      "name": "Urgot",
+      "traits": [
+        "chemtech",
+        "twinshot"
+      ]
+    },
+    {
+      "id": "ziggs",
+      "name": "Ziggs",
+      "traits": [
+        "scrap",
+        "yordle",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "lulu",
+      "name": "Lulu",
+      "traits": [
+        "yordle",
+        "enchanter"
+      ]
+    },
+    {
+      "id": "zilean",
+      "name": "Zilean",
+      "traits": [
+        "clockwork",
+        "innovator"
+      ]
+    },
+    {
+      "id": "vex",
+      "name": "Vex",
+      "traits": [
+        "yordle",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "vi",
+      "name": "Vi",
+      "traits": [
+        "enforcer",
+        "sister",
+        "bruiser"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "academy",
+      "name": "Academy",
+      "levels": [ 2, 4, 6, 8 ]
+    },
+    {
+      "id": "arcanist",
+      "name": "Arcanist",
+      "levels": [ 2, 4, 6, 8 ]
+    },
+    {
+      "id": "assassin",
+      "name": "Assassin",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "bodyguard",
+      "name": "Bodyguard",
+      "levels": [ 2, 4, 6, 8 ]
+    },
+    {
+      "id": "bruiser",
+      "name": "Bruiser",
+      "levels": [ 2, 4, 6, 8 ]
+    },
+    {
+      "id": "challenger",
+      "name": "Challenger",
+      "levels": [ 2, 4, 6, 8 ]
+    },
+    {
+      "id": "chemtech",
+      "name": "Chemtech",
+      "levels": [ 3, 5, 7, 9 ]
+    },
+    {
+      "id": "colossus",
+      "name": "Colossus",
+      "levels": [ 1, 2 ]
+    },
+    {
+      "id": "clockwork",
+      "name": "Clockwork",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "cuddly",
+      "name": "Cuddly",
+      "levels": [ 1 ]
+    },
+    {
+      "id": "enchanter",
+      "name": "Enchanter",
+      "levels": [ 2, 3, 4, 5 ]
+    },
+    {
+      "id": "enforcer",
+      "name": "Enforcer",
+      "levels": [ 2, 4 ]
+    },
+    {
+      "id": "glutton",
+      "name": "Glutton",
+      "levels": [ 1 ]
+    },
+    {
+      "id": "imperial",
+      "name": "Imperial",
+      "levels": [ 3, 5 ]
+    },
+    {
+      "id": "innovator",
+      "name": "Innovator",
+      "levels": [ 3, 5, 7 ]
+    },
+    {
+      "id": "mercenary",
+      "name": "Mercenary",
+      "levels": [ 3, 5 ]
+    },
+    {
+      "id": "mutant",
+      "name": "Mutant",
+      "levels": [ 3, 5 ]
+    },
+    {
+      "id": "protector",
+      "name": "Protector",
+      "levels": [ 2, 3, 4, 5 ]
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "scrap",
+      "name": "Scrap",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "sister",
+      "name": "Sister",
+      "levels": [ 2 ]
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "socialite",
+      "name": "Socialite",
+      "levels": [ 1, 2, 3 ]
+    },
+    {
+      "id": "syndicate",
+      "name": "Syndicate",
+      "levels": [ 3, 5, 7 ]
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer",
+      "levels": [ 1 ]
+    },
+    {
+      "id": "twinshot",
+      "name": "Twinshot",
+      "levels": [ 2, 4, 6 ]
+    },
+    {
+      "id": "yordle",
+      "name": "Yordle",
+      "levels": [ 3, 6 ]
+    }
+  ]
+}

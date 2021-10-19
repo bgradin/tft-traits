@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "champion": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "id", "name", "traits" ]
+    },
+    "trait": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "id", "name", "levels" ]
+    }
+  },
+  "champions": {
+    "type": "array",
+    "items": { "ref": "#/$defs/champion" }
+  },
+  "traits": {
+    "type": "array",
+    "items": { "ref": "#/$defs/trait" }
+  }
+}
