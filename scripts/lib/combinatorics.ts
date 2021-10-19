@@ -6,6 +6,7 @@ function doExecuteOnCombinations<T>(
   prefix: T[]
 ): boolean {
   const inputCopy = input.slice();
+  let executed = false;
   while (inputCopy.length > 0) {
     const item = inputCopy.shift() as T;
     const itemSize = measure(item);
@@ -20,12 +21,12 @@ function doExecuteOnCombinations<T>(
         prefixedItem,
       )) {
         execute(prefixedItem);
-        return true;
+        executed = true;
       }
     }
   }
 
-  return false;
+  return executed;
 }
 
 export function executeOnCombinations<T>(input: T[], maxSize: number, measure: (item: T) => number, execute: (input: T[]) => void) {
