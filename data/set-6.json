@@ -95,6 +95,7 @@
     {
       "id": "galio",
       "name": "Galio",
+      "slots": 2,
       "traits": [
         "socialite",
         "colossus",
@@ -317,6 +318,7 @@
     {
       "id": "sion",
       "name": "Sion",
+      "slots": 2,
       "traits": [
         "imperial",
         "protector",
