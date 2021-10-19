@@ -8,7 +8,7 @@ import { TftSet, Trait } from "./lib/types";
 const USAGE = "Usage: yarn traits <JSON set file> <slots (optional)> <limit (optional)>";
 
 const DEFAULT_SLOTS = 8;
-const DEFAULT_COMP_LIMIT = 3;
+const DEFAULT_COMP_LIMIT = 10;
 
 const SET_FILENAME = process.argv[2];
 const TOTAL_SLOTS = parseInt(process.argv[3] || DEFAULT_SLOTS.toString(), 10);
@@ -48,10 +48,14 @@ executeOnCombinations(set.champions, TOTAL_SLOTS, x => x.slots || 1, (compositio
     traits: calculateTraits(composition, set.traits)
   };
 
-  compositionCache = compositionCache
-    .concat(compositionWithTraits)
-    .sort(numericallyDescending(comp => comp.traits.length))
-    .slice(0, COMP_LIMIT);
+  if (compositionCache.length < COMP_LIMIT) {
+    compositionCache.push(compositionWithTraits);
+  } else {
+    const inferiorCompIndex = compositionCache.findIndex(comp => comp.traits.length < compositionWithTraits.traits.length);
+    if (inferiorCompIndex !== -1) {
+      compositionCache[inferiorCompIndex] = compositionWithTraits;
+    }
+  }
 });
 
 console.log(`Top ${COMP_LIMIT} comps by traits:`);
