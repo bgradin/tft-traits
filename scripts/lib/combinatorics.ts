@@ -7,7 +7,7 @@ function doExecuteOnCombinations<T>(
 ): boolean {
   const inputCopy = input.slice();
   while (inputCopy.length > 0) {
-    const item = inputCopy.shift();
+    const item = inputCopy.shift() as T;
     const itemSize = measure(item);
     if (itemSize <= maxSize) {
       const prefixedItem = prefix.concat(item);
