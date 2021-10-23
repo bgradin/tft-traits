@@ -1,7 +1,9 @@
 import fs from "fs";
+import * as readline from "readline";
+import { BSTree } from "typescript-collections";
 import { Validator } from "jsonschema";
-import { executeOnCombinations } from "./lib/combinatorics";
-import { alphabetically, numericallyDescending } from "./lib/sorting";
+import { getCombinations } from "./lib/combinatorics";
+import { alphabetically, numerically, numericallyDescending } from "./lib/sorting";
 import { calculateTraits, Composition } from "./lib/composition";
 import { TftSet, Trait } from "./lib/types";
 
@@ -41,35 +43,37 @@ interface CompositionCacheItem {
   traits: Trait[];
 }
 
-let compositionCache: CompositionCacheItem[] = [];
-executeOnCombinations(set.champions, TOTAL_SLOTS, x => x.slots || 1, (composition: Composition) => {
+const compositionCache = new BSTree<CompositionCacheItem>(numerically(comp => comp.traits.length));
+
+var start = new Date();
+
+for (let composition of getCombinations(
+  set.champions,
+  TOTAL_SLOTS,
+  x => x.slots || 1
+)) {
   const compositionWithTraits = {
     champions: composition,
     traits: calculateTraits(composition, set.traits)
   };
 
-  if (compositionCache.length < COMP_LIMIT) {
-    compositionCache.push(compositionWithTraits);
-  } else {
-    const inferiorCompIndex = compositionCache.findIndex(comp => comp.traits.length < compositionWithTraits.traits.length);
-    if (inferiorCompIndex !== -1) {
-      compositionCache[inferiorCompIndex] = compositionWithTraits;
+  compositionCache.add(compositionWithTraits);
+
+  if (compositionCache.size() >= COMP_LIMIT) {
+    const min = compositionCache.minimum();
+    if (min) {
+      compositionCache.remove(min);
     }
   }
-});
-
-compositionCache = compositionCache.sort(numericallyDescending(comp => comp.traits.length));
+}
 
 console.log(`Top ${COMP_LIMIT} comps by traits:`);
-for (let i = 0; i < COMP_LIMIT; i++) {
-  const composition = compositionCache[i];
 
-  console.log(`${i + 1}.`)
-
+compositionCache.forEach(composition => {
   const alphabeticalChampions = composition.champions
     .sort(alphabetically(champion => champion.name))
     .map(champion => champion.name);
-  console.log(`  Champions: ${alphabeticalChampions.join(", ")}`);
+    console.log(`  Champions: ${alphabeticalChampions.join(", ")}`);
 
   const traitTally = composition.traits
     .map(trait => ({
@@ -83,4 +87,7 @@ for (let i = 0; i < COMP_LIMIT; i++) {
     .map(trait => `${trait.name}: ${trait.maxLevel}`)
     .join(", ");
   console.log(`  Traits: ${traitTally}`);
-}
+  console.log("\n");
+});
+
+console.log(`Runtime: ${(new Date().getTime() - start.getTime())}ms`);
