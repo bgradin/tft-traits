@@ -5,7 +5,7 @@ import { Composition } from "./lib/composition";
 import { Champion, TftSet } from "./lib/types";
 import { numericallyDescending } from "./lib/sorting";
 
-const USAGE = "Usage: yarn traits <JSON set file> <slots (optional)> <inferred champs (optional)> <limit (optional)>";
+const USAGE = "Usage: yarn traits <JSON set file> <optional: slots> <optional: inferred champs, separated by commas> <optional: limit>";
 
 const DEFAULT_SLOTS = 8;
 const DEFAULT_COMP_LIMIT = 10;
