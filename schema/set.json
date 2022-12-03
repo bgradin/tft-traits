@@ -4,6 +4,7 @@
     "champion": {
       "type": "object",
       "properties": {
+        "cost": { "type": "number" },
         "name": { "type": "string" },
         "traits": {
           "type": "array",
@@ -13,7 +14,7 @@
         }
       },
       "additionalProperties": false,
-      "required": [ "name", "traits" ]
+      "required": [ "cost", "name", "traits" ]
     },
     "trait": {
       "type": "object",

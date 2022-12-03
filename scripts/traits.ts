@@ -37,6 +37,7 @@ if (!validatorResult.valid) {
   printAndExitWithFailure("Invalid JSON set file specified.");
 }
 
+set.champions = set.champions.filter(x => x.cost < 5);
 set.traits.forEach(trait => trait.levels = trait.levels.sort(numericallyDescending(x => x)))
 
 function* findComps(
