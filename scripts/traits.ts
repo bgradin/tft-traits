@@ -2,17 +2,18 @@ import fs from "fs";
 import { BSTree } from "typescript-collections";
 import { Validator } from "jsonschema";
 import { Composition } from "./lib/composition";
-import { TftSet } from "./lib/types";
+import { Champion, TftSet } from "./lib/types";
 import { numericallyDescending } from "./lib/sorting";
 
-const USAGE = "Usage: yarn traits <JSON set file> <slots (optional)> <limit (optional)>";
+const USAGE = "Usage: yarn traits <JSON set file> <slots (optional)> <inferred champs (optional)> <limit (optional)>";
 
 const DEFAULT_SLOTS = 8;
 const DEFAULT_COMP_LIMIT = 10;
 
 const SET_FILENAME = process.argv[2];
 const TOTAL_SLOTS = parseInt(process.argv[3] || DEFAULT_SLOTS.toString(), 10);
-const COMP_LIMIT = parseInt(process.argv[4] || DEFAULT_COMP_LIMIT.toString(), 10);
+const INFERRED_CHAMPS = process.argv[4] || "";
+const COMP_LIMIT = parseInt(process.argv[5] || DEFAULT_COMP_LIMIT.toString(), 10);
 
 function printAndExitWithFailure(message: string) {
   console.error(message);
@@ -61,7 +62,15 @@ const compositionCache = new BSTree<Composition>(numericallyDescending(comp => O
 
 var start = new Date();
 
-for (let composition of findComps(TOTAL_SLOTS)) {
+for (let composition of findComps(TOTAL_SLOTS,
+  new Composition(set, INFERRED_CHAMPS.split(",").map(x => {
+    const champ = set.champions.find(y => y.name === x);
+    if (!champ) {
+      throw new Error("Invalid inferred champ provided!");
+    }
+
+    return champ;
+  })))) {
   compositionCache.add(composition);
 
   if (compositionCache.size() >= COMP_LIMIT) {
