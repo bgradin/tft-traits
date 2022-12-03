@@ -1,10 +1,9 @@
 import fs from "fs";
 import { BSTree } from "typescript-collections";
 import { Validator } from "jsonschema";
-import { getCombinations } from "./lib/combinatorics";
-import { alphabetically, numericallyDescending } from "./lib/sorting";
-import { calculateTraits, Composition } from "./lib/composition";
-import { TftSet, Trait } from "./lib/types";
+import { Composition } from "./lib/composition";
+import { TftSet } from "./lib/types";
+import { numericallyDescending } from "./lib/sorting";
 
 const USAGE = "Usage: yarn traits <JSON set file> <slots (optional)> <limit (optional)>";
 
@@ -37,29 +36,33 @@ if (!validatorResult.valid) {
   printAndExitWithFailure("Invalid JSON set file specified.");
 }
 
-// Optimize by preferring champs with more traits
-set.champions = set.champions.sort(numericallyDescending(x => x.traits.length));
+set.traits.forEach(trait => trait.levels = trait.levels.sort(numericallyDescending(x => x)))
 
-interface CompositionCacheItem {
-  champions: Composition;
-  traits: Trait[];
+function* findComps(
+  size: number,
+  comp = new Composition(set, []),
+  index = 0
+): Generator<Composition> {
+  if (comp.size > size || comp.hasDuplicates() || (comp.size > 2 && !comp.hasSynergies())) {
+    return;
+  }
+
+  if (comp.size === size) {
+    yield comp;
+    return;
+  }
+
+  for (let i = index; i < set.champions.length; i++) {
+    yield* findComps(size, new Composition(set, [...comp.champions, set.champions[i]]), i + 1);
+  }
 }
 
-const compositionCache = new BSTree<CompositionCacheItem>(numericallyDescending(comp => comp.traits.length));
+const compositionCache = new BSTree<Composition>(numericallyDescending(comp => Object.keys(comp.synergies).length));
 
 var start = new Date();
 
-for (let composition of getCombinations(
-  set.champions,
-  TOTAL_SLOTS,
-  x => ["Dragon", "Colossus"].some(y => x.traits.includes(y)) ? 2 : 1
-)) {
-  const compositionWithTraits = {
-    champions: composition,
-    traits: calculateTraits(composition, set.traits)
-  };
-
-  compositionCache.add(compositionWithTraits);
+for (let composition of findComps(TOTAL_SLOTS)) {
+  compositionCache.add(composition);
 
   if (compositionCache.size() >= COMP_LIMIT) {
     const min = compositionCache.minimum();
@@ -72,23 +75,7 @@ for (let composition of getCombinations(
 console.log(`Top ${COMP_LIMIT} comps by traits:`);
 
 compositionCache.forEach(composition => {
-  const alphabeticalChampions = composition.champions
-    .sort(alphabetically(champion => champion.name))
-    .map(champion => champion.name);
-    console.log(`  Champions: ${alphabeticalChampions.join(", ")}`);
-
-  const traitTally = composition.traits
-    .map(trait => ({
-      name: trait.name,
-      maxLevel: trait.levels
-        .filter(level => level <= composition.champions
-          .filter(champion => champion.traits.some(x => x === trait.name)).length)
-        .sort(numericallyDescending(x => x))[0]
-    }))
-    .sort(numericallyDescending(trait => trait.maxLevel))
-    .map(trait => `${trait.name}: ${trait.maxLevel}`)
-    .join(", ");
-  console.log(`  Traits (${composition.traits.length}): ${traitTally}`);
+  console.log(composition.toString());
   console.log("\n");
 });
 
