@@ -1,9 +1,8 @@
 import fs from "fs";
-import * as readline from "readline";
 import { BSTree } from "typescript-collections";
 import { Validator } from "jsonschema";
 import { getCombinations } from "./lib/combinatorics";
-import { alphabetically, numerically, numericallyDescending } from "./lib/sorting";
+import { alphabetically, numericallyDescending } from "./lib/sorting";
 import { calculateTraits, Composition } from "./lib/composition";
 import { TftSet, Trait } from "./lib/types";
 
@@ -38,19 +37,22 @@ if (!validatorResult.valid) {
   printAndExitWithFailure("Invalid JSON set file specified.");
 }
 
+// Optimize by preferring champs with more traits
+set.champions = set.champions.sort(numericallyDescending(x => x.traits.length));
+
 interface CompositionCacheItem {
   champions: Composition;
   traits: Trait[];
 }
 
-const compositionCache = new BSTree<CompositionCacheItem>(numerically(comp => comp.traits.length));
+const compositionCache = new BSTree<CompositionCacheItem>(numericallyDescending(comp => comp.traits.length));
 
 var start = new Date();
 
 for (let composition of getCombinations(
   set.champions,
   TOTAL_SLOTS,
-  x => x.slots || 1
+  x => ["Dragon", "Colossus"].some(y => x.traits.includes(y)) ? 2 : 1
 )) {
   const compositionWithTraits = {
     champions: composition,
@@ -80,13 +82,13 @@ compositionCache.forEach(composition => {
       name: trait.name,
       maxLevel: trait.levels
         .filter(level => level <= composition.champions
-          .filter(champion => champion.traits.some(x => x === trait.id)).length)
+          .filter(champion => champion.traits.some(x => x === trait.name)).length)
         .sort(numericallyDescending(x => x))[0]
     }))
     .sort(numericallyDescending(trait => trait.maxLevel))
     .map(trait => `${trait.name}: ${trait.maxLevel}`)
     .join(", ");
-  console.log(`  Traits: ${traitTally}`);
+  console.log(`  Traits (${composition.traits.length}): ${traitTally}`);
   console.log("\n");
 });
 

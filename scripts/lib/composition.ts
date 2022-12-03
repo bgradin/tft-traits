@@ -6,5 +6,5 @@ export function calculateTraits(composition: Composition, traits: Trait[]): Trai
   return traits
     .filter(trait => trait.levels
       .some(level => level <= composition.filter(champion => champion.traits
-        .some(x => x === trait.id)).length));
+        .some(x => x === trait.name)).length));
 }

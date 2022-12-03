@@ -4,9 +4,7 @@
     "champion": {
       "type": "object",
       "properties": {
-        "id": { "type": "string" },
         "name": { "type": "string" },
-        "slots": { "type": "integer" },
         "traits": {
           "type": "array",
           "items": {
@@ -15,12 +13,11 @@
         }
       },
       "additionalProperties": false,
-      "required": [ "id", "name", "traits" ]
+      "required": [ "name", "traits" ]
     },
     "trait": {
       "type": "object",
       "properties": {
-        "id": { "type": "string" },
         "name": { "type": "string" },
         "levels": {
           "type": "array",
@@ -30,7 +27,7 @@
         }
       },
       "additionalProperties": false,
-      "required": [ "id", "name", "levels" ]
+      "required": [ "name", "levels" ]
     }
   },
   "type": "object",
