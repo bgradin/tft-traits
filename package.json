@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "traits.ts",
   "scripts": {
+    "scrape": "npx ts-node scripts/scrape.ts",
     "traits": "npx ts-node scripts/traits.ts"
   },
   "author": "Brian Gradin",

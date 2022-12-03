@@ -1,6 +1,7 @@
 {
   "champions": [
     {
+      "cost": 3,
       "name": "Alistar",
       "traits": [
         "Ox Force",
@@ -9,6 +10,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Annie",
       "traits": [
         "Gadgeteen",
@@ -17,6 +19,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Aphelios",
       "traits": [
         "Ox Force",
@@ -25,6 +28,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Ashe",
       "traits": [
         "LaserCorps",
@@ -32,6 +36,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Aurelion Sol",
       "traits": [
         "Threat",
@@ -39,6 +44,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Belveth",
       "traits": [
         "Threat",
@@ -46,6 +52,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Blitzcrank",
       "traits": [
         "A.D.M.I.N.",
@@ -53,6 +60,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Camille",
       "traits": [
         "A.D.M.I.N.",
@@ -60,6 +68,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Chogath",
       "traits": [
         "Threat",
@@ -67,6 +76,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Draven",
       "traits": [
         "Mecha: PRIME",
@@ -74,6 +84,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Ekko",
       "traits": [
         "Star Guardian",
@@ -82,6 +93,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Ezreal",
       "traits": [
         "The Underground",
@@ -89,6 +101,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Fiddlesticks",
       "traits": [
         "Corrupted",
@@ -97,6 +110,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Fiora",
       "traits": [
         "Ox Force",
@@ -104,6 +118,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Galio",
       "traits": [
         "Civilian",
@@ -111,6 +126,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Gangplank",
       "traits": [
         "Supers",
@@ -118,6 +134,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Janna",
       "traits": [
         "Civilian",
@@ -126,6 +143,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Jax",
       "traits": [
         "Mecha: PRIME",
@@ -133,6 +151,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Jinx",
       "traits": [
         "Anima Squad",
@@ -140,6 +159,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Kaisa",
       "traits": [
         "Star Guardian",
@@ -147,6 +167,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Kayle",
       "traits": [
         "The Underground",
@@ -154,6 +175,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Leblanc",
       "traits": [
         "A.D.M.I.N.",
@@ -162,6 +184,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Lee Sin",
       "traits": [
         "Supers",
@@ -170,6 +193,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Leona",
       "traits": [
         "Mecha: PRIME",
@@ -178,6 +202,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Lulu",
       "traits": [
         "Gadgeteen",
@@ -185,6 +210,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Lux",
       "traits": [
         "Star Guardian",
@@ -192,6 +218,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Malphite",
       "traits": [
         "Supers",
@@ -199,6 +226,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Miss Fortune",
       "traits": [
         "Anima Squad",
@@ -206,6 +234,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Mordekaiser",
       "traits": [
         "LaserCorps",
@@ -213,6 +242,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Nasus",
       "traits": [
         "Anima Squad",
@@ -220,6 +250,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Nilah",
       "traits": [
         "Star Guardian",
@@ -227,6 +258,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Nunu",
       "traits": [
         "Gadgeteen",
@@ -234,6 +266,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Poppy",
       "traits": [
         "Gadgeteen",
@@ -241,6 +274,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Rammus",
       "traits": [
         "Threat",
@@ -248,6 +282,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Rell",
       "traits": [
         "Star Guardian",
@@ -255,6 +290,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Renekton",
       "traits": [
         "LaserCorps",
@@ -262,6 +298,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Riven",
       "traits": [
         "Anima Squad",
@@ -270,6 +307,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Samira",
       "traits": [
         "The Underground",
@@ -278,6 +316,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Sejuani",
       "traits": [
         "LaserCorps",
@@ -285,6 +324,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Senna",
       "traits": [
         "LaserCorps",
@@ -292,6 +332,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Sett",
       "traits": [
         "Mecha: PRIME",
@@ -299,6 +340,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Sivir",
       "traits": [
         "Civilian",
@@ -306,6 +348,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Sona",
       "traits": [
         "The Underground",
@@ -314,6 +357,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Soraka",
       "traits": [
         "A.D.M.I.N.",
@@ -321,6 +365,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Sylas",
       "traits": [
         "Anima Squad",
@@ -328,6 +373,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Syndra",
       "traits": [
         "Star Guardian",
@@ -335,6 +381,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Taliyah",
       "traits": [
         "Star Guardian",
@@ -342,6 +389,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Talon",
       "traits": [
         "Ox Force",
@@ -349,6 +397,7 @@
       ]
     },
     {
+      "cost": 5,
       "name": "Urgot",
       "traits": [
         "Threat",
@@ -356,6 +405,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Vayne",
       "traits": [
         "Anima Squad",
@@ -364,6 +414,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Velkoz",
       "traits": [
         "Threat",
@@ -371,6 +422,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Vi",
       "traits": [
         "The Underground",
@@ -379,6 +431,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Viego",
       "traits": [
         "Ox Force",
@@ -386,6 +439,7 @@
       ]
     },
     {
+      "cost": 1,
       "name": "Wukong",
       "traits": [
         "Mecha: PRIME",
@@ -393,6 +447,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Yasuo",
       "traits": [
         "LaserCorps",
@@ -400,6 +455,7 @@
       ]
     },
     {
+      "cost": 2,
       "name": "Yuumi",
       "traits": [
         "Star Guardian",
@@ -408,6 +464,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Zac",
       "traits": [
         "Threat",
@@ -415,6 +472,7 @@
       ]
     },
     {
+      "cost": 4,
       "name": "Zed",
       "traits": [
         "LaserCorps",
@@ -423,6 +481,7 @@
       ]
     },
     {
+      "cost": 3,
       "name": "Zoe",
       "traits": [
         "Gadgeteen",

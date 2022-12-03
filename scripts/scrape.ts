@@ -10,6 +10,7 @@ const SET = 8;
 
 interface InputChampion {
   name: string;
+  cost: number;
   origin: string[];
   set: number[];
   type: string[];
@@ -125,6 +126,7 @@ async function run() {
       set.champions.push(...(json as InputChampion[])
       .filter(champion => champion.set.includes(SET))
       .map(champion => ({
+        cost: champion.cost,
         name: champion.name,
         traits: champion.origin.concat(champion.type),
       })));

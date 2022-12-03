@@ -1,4 +1,5 @@
 export interface Champion {
+  cost: number;
   name: string;
   traits: string[];
 }
