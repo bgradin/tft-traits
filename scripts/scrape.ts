@@ -2,7 +2,7 @@ import { get } from "./lib/utils";
 import { Validator } from "jsonschema";
 import fs from "fs";
 import { promisify } from "util";
-import { Champion, Trait, TftSet } from "./lib/types";
+import { TftSet } from "./lib/types";
 
 const writeFile = promisify(fs.writeFile);
 
