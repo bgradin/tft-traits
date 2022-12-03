@@ -1,0 +1,640 @@
+{
+  "champions": [
+    {
+      "name": "Alistar",
+      "traits": [
+        "Ox Force",
+        "Mascot",
+        "Aegis"
+      ]
+    },
+    {
+      "name": "Annie",
+      "traits": [
+        "Gadgeteen",
+        "Ox Force",
+        "Spellslinger"
+      ]
+    },
+    {
+      "name": "Aphelios",
+      "traits": [
+        "Ox Force",
+        "Sureshot",
+        "Arsenal"
+      ]
+    },
+    {
+      "name": "Ashe",
+      "traits": [
+        "LaserCorps",
+        "Recon"
+      ]
+    },
+    {
+      "name": "Aurelion Sol",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Belveth",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Blitzcrank",
+      "traits": [
+        "A.D.M.I.N.",
+        "Brawler"
+      ]
+    },
+    {
+      "name": "Camille",
+      "traits": [
+        "A.D.M.I.N.",
+        "Renegade"
+      ]
+    },
+    {
+      "name": "Chogath",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Draven",
+      "traits": [
+        "Mecha: PRIME",
+        "Ace"
+      ]
+    },
+    {
+      "name": "Ekko",
+      "traits": [
+        "Star Guardian",
+        "Prankster",
+        "Aegis"
+      ]
+    },
+    {
+      "name": "Ezreal",
+      "traits": [
+        "The Underground",
+        "Recon"
+      ]
+    },
+    {
+      "name": "Fiddlesticks",
+      "traits": [
+        "Corrupted",
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Fiora",
+      "traits": [
+        "Ox Force",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Galio",
+      "traits": [
+        "Civilian",
+        "Mascot"
+      ]
+    },
+    {
+      "name": "Gangplank",
+      "traits": [
+        "Supers",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Janna",
+      "traits": [
+        "Civilian",
+        "Forecaster",
+        "Spellslinger"
+      ]
+    },
+    {
+      "name": "Jax",
+      "traits": [
+        "Mecha: PRIME",
+        "Brawler"
+      ]
+    },
+    {
+      "name": "Jinx",
+      "traits": [
+        "Anima Squad",
+        "Prankster"
+      ]
+    },
+    {
+      "name": "Kaisa",
+      "traits": [
+        "Star Guardian",
+        "Recon"
+      ]
+    },
+    {
+      "name": "Kayle",
+      "traits": [
+        "The Underground",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Leblanc",
+      "traits": [
+        "A.D.M.I.N.",
+        "Spellslinger",
+        "Hacker"
+      ]
+    },
+    {
+      "name": "Lee Sin",
+      "traits": [
+        "Supers",
+        "Heart",
+        "Brawler"
+      ]
+    },
+    {
+      "name": "Leona",
+      "traits": [
+        "Mecha: PRIME",
+        "Renegade",
+        "Aegis"
+      ]
+    },
+    {
+      "name": "Lulu",
+      "traits": [
+        "Gadgeteen",
+        "Heart"
+      ]
+    },
+    {
+      "name": "Lux",
+      "traits": [
+        "Star Guardian",
+        "Spellslinger"
+      ]
+    },
+    {
+      "name": "Malphite",
+      "traits": [
+        "Supers",
+        "Mascot"
+      ]
+    },
+    {
+      "name": "Miss Fortune",
+      "traits": [
+        "Anima Squad",
+        "Ace"
+      ]
+    },
+    {
+      "name": "Mordekaiser",
+      "traits": [
+        "LaserCorps",
+        "Ace"
+      ]
+    },
+    {
+      "name": "Nasus",
+      "traits": [
+        "Anima Squad",
+        "Mascot"
+      ]
+    },
+    {
+      "name": "Nilah",
+      "traits": [
+        "Star Guardian",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Nunu",
+      "traits": [
+        "Gadgeteen",
+        "Mascot"
+      ]
+    },
+    {
+      "name": "Poppy",
+      "traits": [
+        "Gadgeteen",
+        "Defender"
+      ]
+    },
+    {
+      "name": "Rammus",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Rell",
+      "traits": [
+        "Star Guardian",
+        "Defender"
+      ]
+    },
+    {
+      "name": "Renekton",
+      "traits": [
+        "LaserCorps",
+        "Brawler"
+      ]
+    },
+    {
+      "name": "Riven",
+      "traits": [
+        "Anima Squad",
+        "Brawler",
+        "Defender"
+      ]
+    },
+    {
+      "name": "Samira",
+      "traits": [
+        "The Underground",
+        "Sureshot",
+        "Ace"
+      ]
+    },
+    {
+      "name": "Sejuani",
+      "traits": [
+        "LaserCorps",
+        "Brawler"
+      ]
+    },
+    {
+      "name": "Senna",
+      "traits": [
+        "LaserCorps",
+        "Sureshot"
+      ]
+    },
+    {
+      "name": "Sett",
+      "traits": [
+        "Mecha: PRIME",
+        "Defender"
+      ]
+    },
+    {
+      "name": "Sivir",
+      "traits": [
+        "Civilian",
+        "Sureshot"
+      ]
+    },
+    {
+      "name": "Sona",
+      "traits": [
+        "The Underground",
+        "Spellslinger",
+        "Heart"
+      ]
+    },
+    {
+      "name": "Soraka",
+      "traits": [
+        "A.D.M.I.N.",
+        "Heart"
+      ]
+    },
+    {
+      "name": "Sylas",
+      "traits": [
+        "Anima Squad",
+        "Renegade"
+      ]
+    },
+    {
+      "name": "Syndra",
+      "traits": [
+        "Star Guardian",
+        "Heart"
+      ]
+    },
+    {
+      "name": "Taliyah",
+      "traits": [
+        "Star Guardian",
+        "Spellslinger"
+      ]
+    },
+    {
+      "name": "Talon",
+      "traits": [
+        "Ox Force",
+        "Renegade"
+      ]
+    },
+    {
+      "name": "Urgot",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Vayne",
+      "traits": [
+        "Anima Squad",
+        "Recon",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Velkoz",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Vi",
+      "traits": [
+        "The Underground",
+        "Brawler",
+        "Aegis"
+      ]
+    },
+    {
+      "name": "Viego",
+      "traits": [
+        "Ox Force",
+        "Renegade"
+      ]
+    },
+    {
+      "name": "Wukong",
+      "traits": [
+        "Mecha: PRIME",
+        "Defender"
+      ]
+    },
+    {
+      "name": "Yasuo",
+      "traits": [
+        "LaserCorps",
+        "Duelist"
+      ]
+    },
+    {
+      "name": "Yuumi",
+      "traits": [
+        "Star Guardian",
+        "Mascot",
+        "Heart"
+      ]
+    },
+    {
+      "name": "Zac",
+      "traits": [
+        "Threat",
+        "-"
+      ]
+    },
+    {
+      "name": "Zed",
+      "traits": [
+        "LaserCorps",
+        "Duelist",
+        "Hacker"
+      ]
+    },
+    {
+      "name": "Zoe",
+      "traits": [
+        "Gadgeteen",
+        "Prankster",
+        "Hacker"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "name": "A.D.M.I.N.",
+      "levels": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Anima Squad",
+      "levels": [
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Civilian",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Corrupted",
+      "levels": [
+        1
+      ]
+    },
+    {
+      "name": "Gadgeteen",
+      "levels": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "LaserCorps",
+      "levels": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "name": "Mecha: PRIME",
+      "levels": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Ox Force",
+      "levels": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Star Guardian",
+      "levels": [
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "name": "Supers",
+      "levels": [
+        3
+      ]
+    },
+    {
+      "name": "Threat",
+      "levels": [
+        1
+      ]
+    },
+    {
+      "name": "The Underground",
+      "levels": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Ace",
+      "levels": [
+        1,
+        4
+      ]
+    },
+    {
+      "name": "Aegis",
+      "levels": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Arsenal",
+      "levels": [
+        1
+      ]
+    },
+    {
+      "name": "Brawler",
+      "levels": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Defender",
+      "levels": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Duelist",
+      "levels": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Forecaster",
+      "levels": [
+        1
+      ]
+    },
+    {
+      "name": "Hacker",
+      "levels": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Heart",
+      "levels": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Mascot",
+      "levels": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Prankster",
+      "levels": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Recon",
+      "levels": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Renegade",
+      "levels": [
+        3,
+        6
+      ]
+    },
+    {
+      "name": "Spellslinger",
+      "levels": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Sureshot",
+      "levels": [
+        2,
+        4
+      ]
+    }
+  ]
+}

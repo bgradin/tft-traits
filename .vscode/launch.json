@@ -2,12 +2,26 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug",
+      "name": "Debug Traits",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "node",
       "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
-      "args": ["scripts/traits.ts", "data/set-6.json"],
+      "args": ["scripts/traits.ts", "data/set-8.json"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "env": {
+        "NODE_OPTIONS": "--max-old-space-size=4096"
+      }
+    },
+    {
+      "name": "Debug Scaper",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
+      "args": ["scripts/scrape.ts"],
       "cwd": "${workspaceRoot}",
       "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**", "node_modules/**"],
