@@ -63,14 +63,14 @@ const compositionCache = new BSTree<Composition>(numericallyDescending(comp => O
 var start = new Date();
 
 for (let composition of findComps(TOTAL_SLOTS,
-  new Composition(set, INFERRED_CHAMPS.split(",").map(x => {
+  new Composition(set, INFERRED_CHAMPS.trim() ? INFERRED_CHAMPS.split(",").map(x => {
     const champ = set.champions.find(y => y.name === x);
     if (!champ) {
       throw new Error("Invalid inferred champ provided!");
     }
 
     return champ;
-  })))) {
+  }) : []))) {
   compositionCache.add(composition);
 
   if (compositionCache.size() >= COMP_LIMIT) {
